@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/icono.ico' %}" />
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="contenedor-header">
+            <a href="{% url 'home' %}">
+                <h1>Libreria Elena</h1>
+            </a>
+            <nav class="navegacion">
+                <a class="btn" href="{% url 'buscar' %}">Buscar</a>
+                <a class="btn" href="{% url 'autores' %}">Autores</a>
+                <a class="btn" href="{% url 'categorias' %}">Categorias</a>
+                <a class="btn" href="{% url 'libros' %}">Libros</a>
+                <a class="btn" href="{% url 'clientes' %}">Clientes</a>
+                <a class="btn" href="{% url 'pedidos' %}">Pedidos</a>
+            </nav>
+        </div>
+    </header>
+    
+    {% block contenido %}
+    <main>
+        <div class="hero"></div>
+    </main>
+    {% endblock contenido%}
+
+    <footer>
+        <div class="contenedor-footer">
+            <h3 class="copyright">© Libreria Elena. Todos los derechos Reservados</h3>
+        </div>
+    </footer>
+
+
+</body>
+</html>
