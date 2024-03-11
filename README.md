@@ -1,4 +1,4 @@
-# Tercera Pre-entrega: Aplicación Web de Registro - Salcedo Morales Francisco José
+# Tercera Pre-entrega: Aplicación Web de Formulario y Busqueda - Salcedo Morales Francisco José
 
 Este proyecto es una aplicación web desarrollada con Django que permite registrar nuevas instancias de un modelo seleccionado a través de un formulario y visualizarlos en una tabla, ademas cuenta con 5 buscadores ubicados en el menu "buscar" hechos para cada modelo.
 
